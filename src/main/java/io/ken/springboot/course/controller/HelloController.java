@@ -13,6 +13,12 @@ public class HelloController {
         return "Hello World!";
     }
 
+    @RequestMapping("/godv")
+    @ResponseBody
+    String godv(){
+        return "天不生我高德伟,吃鸡万古如长夜!";
+    }
+
     @RequestMapping("/welcome")
     ModelAndView welcome(){
         ModelAndView modelAndView = new ModelAndView();
